@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.Item_shop:
 
+                    Intent intent = new Intent(MainActivity.this, ComprasActivity.class);
+                    startActivity(intent);
                     return true;
                 case R.id.Item_buy:
 
