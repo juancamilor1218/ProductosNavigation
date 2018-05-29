@@ -1,15 +1,11 @@
 package com.example.estebanjojoa.bottonnavigation;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Layout;
 import android.view.MenuItem;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.Item_user:
-                        Fragment4 fragment4 = new Fragment4();
+                        FragmentProfile fragment4 = new FragmentProfile();
                         getSupportFragmentManager()
                                 .beginTransaction()
                                 .replace(R.id.frameLayout, fragment4)
