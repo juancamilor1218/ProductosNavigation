@@ -1,22 +1,33 @@
-package com.example.estebanjojoa.bottonnavigation;
+package com.example.estebanjojoa.bottonnavigation.Home.view;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
+
+import com.example.estebanjojoa.bottonnavigation.Fragment1;
+import com.example.estebanjojoa.bottonnavigation.Fragment2;
+import com.example.estebanjojoa.bottonnavigation.Fragment3;
+import com.example.estebanjojoa.bottonnavigation.FragmentProfile;
+import com.example.estebanjojoa.bottonnavigation.R;
 
 public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView botto_navigation;
-
+    RecyclerView recyclerViewProducts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        recyclerViewProducts=(RecyclerView)findViewById(R.id.id_rcv_products);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        recyclerViewProducts.setLayoutManager(linearLayoutManager);
 
         botto_navigation = (BottomNavigationView) findViewById(R.id.botton_navigation);
         botto_navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
