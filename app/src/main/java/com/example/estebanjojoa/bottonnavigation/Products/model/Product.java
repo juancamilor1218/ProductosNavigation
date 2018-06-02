@@ -1,4 +1,4 @@
-package com.example.estebanjojoa.bottonnavigation.Home.model;
+package com.example.estebanjojoa.bottonnavigation.Products.model;
 
 /**
  * Created by Acer on 28/05/2018.
@@ -10,13 +10,13 @@ public class Product {
     private String logo;
     private double precio;
     private String marca;
-    private String oferta;
+    private int oferta;
 
     public int getId() {
         return id;
     }
 
-    public Product(int id, String title, String logo, double precio, String marca, String oferta) {
+    public Product(int id, String title, String logo, double precio, String marca, int oferta) {
         this.id = id;
         this.title = title;
         this.logo = logo;
@@ -61,11 +61,11 @@ public class Product {
         this.marca = marca;
     }
 
-    public String getOferta() {
+    public int getOferta() {
         return oferta;
     }
 
-    public void setOferta(String oferta) {
+    public void setOferta(int oferta) {
         this.oferta = oferta;
     }
 }

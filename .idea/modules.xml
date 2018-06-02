@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/bottonNavigation.iml" filepath="$PROJECT_DIR$/.idea/bottonNavigation.iml" />
-      <module fileurl="file://C:\Users\Acer\AndroidStudioProjects\bottonNavigation\bottonNavigation.iml" filepath="C:\Users\Acer\AndroidStudioProjects\bottonNavigation\bottonNavigation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bottonNavigation.iml" filepath="$PROJECT_DIR$/bottonNavigation.iml" />
     </modules>
   </component>
 </project>

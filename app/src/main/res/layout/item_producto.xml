@@ -1,118 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/background_light"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+
+    >
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:padding="5dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border_sale"
-            android:padding="5dp"
-            android:textSize="9dp"
-            android:text="Promoción"
-            android:layout_marginLeft="-5dp"
-            android:textColor="@android:color/white"
-            android:id="@+id/id_tv_sale"
-            android:visibility="visible"
-            />
-        <RelativeLayout
+        android:layout_height="130dp"
+        android:padding="5dp"
+
+        >
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/id_rl_item"
-            android:layout_below="@id/id_tv_sale">
-            <ImageView
-                android:layout_width="145dp"
-                android:layout_height="145dp"
-                android:id="@+id/id_iv_product"
-                android:background="@drawable/ic_launcher_background"
-                />
-            <LinearLayout
+            android:layout_height="wrap_content">
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/id_ll_content"
-                android:orientation="vertical"
-                android:layout_toRightOf="@id/id_iv_product"
-                android:layout_marginLeft="10dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/id_tv_product"
-                    android:text="AVOCADO"
-                    android:textSize="13dp"
-                    android:textColor="@android:color/black"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/id_iv_company"
-                    android:textSize="11dp"
-                    android:text="Alkosto"/>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="10dp">
-                    <ImageView
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:background="@drawable/start"
-                        android:id="@+id/id_iv_star1"/>
-                    <ImageView
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:background="@drawable/start"
-                        android:id="@+id/id_iv_star2"/>
-                    <ImageView
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:background="@drawable/start"
-                        android:id="@+id/id_iv_star3"/>
-                    <ImageView
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:background="@drawable/start"
-                        android:id="@+id/id_iv_star4"/>
-                    <ImageView
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:background="@drawable/start"
-                        android:id="@+id/id_iv_star5"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="10dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="$"
-                        android:textSize="13dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/id_tv_price"
-                        android:textSize="24dp"
-                        android:textColor="@android:color/black"
-                        android:textStyle="bold"
-                        android:layout_marginLeft="5dp"
-                        android:text="25.000"/>
-                </LinearLayout>
-
-            </LinearLayout>
-            <Button
-                android:layout_width="70dp"
-                android:layout_height="35dp"
-                android:text="ABRIR"
-                android:background="@drawable/border_button"
+                android:background="@drawable/border_sale"
+                android:padding="5dp"
+                android:textSize="9dp"
+                android:text="Promoción"
                 android:textColor="@android:color/white"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"/>
-        </RelativeLayout>
+                android:id="@+id/id_tv_sale"
+                android:visibility="gone"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_rl_item"
+                android:layout_below="@id/id_tv_sale">
+
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/id_iv_product"
+
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_ll_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/id_iv_product"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/id_tv_product"
+                        android:text="AVOCADO"
+                        android:textSize="13dp"
+                        android:textColor="@android:color/black"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/id_iv_company"
+                        android:textSize="11dp"
+                        android:text="Alkosto"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/start"
+                            android:id="@+id/id_iv_star1"/>
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/start"
+                            android:id="@+id/id_iv_star2"/>
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/start"
+                            android:id="@+id/id_iv_star3"/>
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/start"
+                            android:id="@+id/id_iv_star4"/>
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/start"
+                            android:id="@+id/id_iv_star5"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$"
+                            android:textSize="13dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/id_tv_price"
+                            android:textSize="24dp"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="5dp"
+                            android:text="25.000"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:text="ABRIR"
+                    android:background="@drawable/border_button"
+                    android:textColor="@android:color/white"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </FrameLayout>
+
 
 
     </RelativeLayout>

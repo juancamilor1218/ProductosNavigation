@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/Item_shop"
+        android:id="@+id/Item_pro"
         android:icon="@drawable/icons8_carrito_de_la_compra_cargado_96"
         android:title="Productos" />
 
     <item
-        android:id="@+id/Item_buy"
+        android:id="@+id/Item_market"
         android:icon="@drawable/icons8_bolsa_de_compras_96"
-        android:title="Compras" />
+        android:title="Supermercados" />
 
     <item
         android:id="@+id/Item_fav"

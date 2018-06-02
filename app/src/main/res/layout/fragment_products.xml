@@ -2,13 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/frame"
-    tools:context="com.example.estebanjojoa.bottonnavigation.Fragment2">
+    tools:context="com.example.estebanjojoa.bottonnavigation.Products.view.FragmentProducts">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="hello_blank_fragment2" />
+        android:id="@+id/id_rcv_products">
+
+    </android.support.v7.widget.RecyclerView>
 
 </android.support.design.widget.CoordinatorLayout>
