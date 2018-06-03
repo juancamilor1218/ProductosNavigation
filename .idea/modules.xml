@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ProductosNavigation.iml" filepath="$PROJECT_DIR$/ProductosNavigation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/bottonNavigation.iml" filepath="$PROJECT_DIR$/.idea/bottonNavigation.iml" />
       <module fileurl="file://$PROJECT_DIR$/bottonNavigation.iml" filepath="$PROJECT_DIR$/bottonNavigation.iml" />
