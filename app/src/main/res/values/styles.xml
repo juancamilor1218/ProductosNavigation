@@ -9,7 +9,7 @@
     </style>
 
     <style name="EditTextWhite">
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">15dp</item>
         <item name="android:textColorHint">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorPrimary</item>
         <item name="colorControlNormal">@color/colorPrimaryDark</item>
@@ -17,6 +17,7 @@
     </style>
 
     <style name="RaisedButtonDark">
+        <item name="android:textSize">10dp</item>
         <item name="colorButtonNormal">@color/colorPrimaryDark</item>
         <item name="colorControlHighlight">@color/colorPrimary</item>
         <item name="android:textColor">@android:color/white</item>

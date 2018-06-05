@@ -5,24 +5,20 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
 
 import com.example.estebanjojoa.bottonnavigation.Products.view.FragmentProducts;
-import com.example.estebanjojoa.bottonnavigation.Fragment2;
+import com.example.estebanjojoa.bottonnavigation.Supermarket.view.SupermarketFragment;
 import com.example.estebanjojoa.bottonnavigation.Fragment3;
 import com.example.estebanjojoa.bottonnavigation.FragmentProfile;
-import com.example.estebanjojoa.bottonnavigation.Home.adapter.HomeAdapter;
 
 import com.example.estebanjojoa.bottonnavigation.R;
-
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView botto_navigation;
-    RecyclerView recyclerViewProducts;
+    //RecyclerView recyclerViewProducts;
 
 
     @Override
@@ -47,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
                             break;
                         case R.id.Item_market:
-                            Fragment2 fragment2 = new Fragment2();
+                            SupermarketFragment fragment2 = new SupermarketFragment();
                             getSupportFragmentManager()
                                     .beginTransaction()
                                     .replace(R.id.framelayout, fragment2)

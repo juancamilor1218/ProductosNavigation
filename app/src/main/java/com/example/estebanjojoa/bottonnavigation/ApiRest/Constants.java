@@ -7,5 +7,6 @@ package com.example.estebanjojoa.bottonnavigation.ApiRest;
 public class Constants {
     public static final String ROOT_URL = "https://exampleapirest.herokuapp.com/";
     public static final String URL_PRODUCTS = "products";
-
+    public static final String URL_COMPANY = "company";
 }
+

@@ -1,6 +1,7 @@
 package com.example.estebanjojoa.bottonnavigation.ApiRest;
 
 import com.example.estebanjojoa.bottonnavigation.Products.model.Product;
+import com.example.estebanjojoa.bottonnavigation.Supermarket.model.Supermarket;
 
 import java.util.List;
 
@@ -17,6 +18,9 @@ public interface Service {
 
     @GET(Constants.URL_PRODUCTS)
     Call<List<Product>> getDataProducts();
+
+    @GET(Constants.URL_COMPANY)
+    Call<List<Supermarket>> getDataCompany();
 
 
 }
