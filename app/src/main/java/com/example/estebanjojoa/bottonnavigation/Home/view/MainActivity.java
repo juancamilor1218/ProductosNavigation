@@ -1,5 +1,8 @@
 package com.example.estebanjojoa.bottonnavigation.Home.view;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -8,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
 
+import com.example.estebanjojoa.bottonnavigation.Login.view.Login;
 import com.example.estebanjojoa.bottonnavigation.Products.view.FragmentProducts;
 import com.example.estebanjojoa.bottonnavigation.Supermarket.view.SupermarketFragment;
 import com.example.estebanjojoa.bottonnavigation.Fragment3;
@@ -18,6 +22,7 @@ import com.example.estebanjojoa.bottonnavigation.R;
 public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView botto_navigation;
+    SharedPreferences sharedPreferences;
     //RecyclerView recyclerViewProducts;
 
 
@@ -28,7 +33,12 @@ public class MainActivity extends AppCompatActivity {
         //homePresenter= new HomePresenterImpl(this);
         //homePresenter.getDataProducts();
         botto_navigation = (BottomNavigationView) findViewById(R.id.botton_navigation);
-        botto_navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+      initSharedPreferences();
+
+        }
+        public void initBottomNavigationView(){
+            botto_navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+
 
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     switch (item.getItemId()){
@@ -79,6 +89,21 @@ public class MainActivity extends AppCompatActivity {
 
             });
         }
+    public void initSharedPreferences(){
+
+        sharedPreferences = getSharedPreferences("PreferencesLogin", Context.MODE_PRIVATE);
+
+        String user = sharedPreferences.getString("user", null);
+
+        if ( (user == null) || (user.equals("")) ){
+            Intent intent = new Intent(this, Login.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+        }else {
+            initBottomNavigationView();
+        }
+
+    }
 
 
 
