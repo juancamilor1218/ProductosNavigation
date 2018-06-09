@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">bottonNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_nombre_usuraio">Name user</string>
+    <string name="title_contraseña">Password</string>
+    <string name="title_correo">Email</string>
+    <string name="title_user">Name</string>
+    <string name="title_boton_ingresar">Enter</string>
+    <string name="title_crear_cuenta">Create account</string>
+    <string name="title_conf_contaseña">Confirm password</string>
+    <string name="title_registrar">Registrer</string>
+    <string name="title_boton_llegar">How to get</string>
+</resources>

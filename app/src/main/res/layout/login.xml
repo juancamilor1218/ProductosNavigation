@@ -30,19 +30,17 @@
             android:id="@+id/id_et_usuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nombre de usuario"
             android:layout_marginTop="15dp"
-            android:theme="@style/EditTextWhite"
-            />
+            android:hint="@string/title_nombre_usuraio"
+            android:theme="@style/EditTextWhite" />
 
         <EditText
             android:id="@+id/id_et_contraseña"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contraseña"
             android:layout_marginTop="15dp"
-            android:theme="@style/EditTextWhite"
-            />
+            android:hint="@string/title_contraseña"
+            android:theme="@style/EditTextWhite" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -55,9 +53,9 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ingresar"
-               android:onClick="OnClickButon"
-                android:theme="@style/RaisedButtonDark"/>
+                android:onClick="OnClickButon"
+                android:text="@string/title_boton_ingresar"
+                android:theme="@style/RaisedButtonDark" />
         </LinearLayout>
 <LinearLayout
     android:layout_width="wrap_content"
@@ -65,15 +63,15 @@
     android:orientation="horizontal"
     android:layout_gravity="center_horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="Crear cuenta"
-            android:textSize="17sp"
-            android:layout_marginTop="17dp"
-            android:textColor="@color/colorPrimary"
-            android:onClick="crear_cuenta"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:onClick="crear_cuenta"
+        android:text="@string/title_crear_cuenta"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp"
+        android:textStyle="bold" />
 </LinearLayout>
     </LinearLayout>
 

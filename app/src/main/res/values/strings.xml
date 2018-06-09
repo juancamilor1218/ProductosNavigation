@@ -6,4 +6,14 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_nombre_usuraio">Nombre de usuario</string>
+    <string name="title_contraseña">Contraseña</string>
+    <string name="title_correo">Email</string>
+    <string name="title_user">Nombre</string>
+    <string name="title_boton_ingresar">Ingresar</string>
+    <string name="title_crear_cuenta">Crear cuenta</string>
+    <string name="title_conf_contaseña">Confirmar contraseña</string>
+    <string name="title_registrar">Registrar</string>
+    <string name="title_boton_llegar">Como llegar</string>
 </resources>
